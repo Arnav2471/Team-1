@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Freedom Gallery</title>
+    <link href="" rel="stylesheet">
+    <style>
+    body{
+        font-family: 'Poppins',sans-serif;
+        margin: 0;
+        background: linear-gradient(to bottom, #fffaf5, #f5fff8);
+        color: #222;
+        line-height: 1.6;
+    }
+    header{
+        background: linear-gradient(90deg, #ff9933, #FF8000, #138808);
+        color: white;
+        padding: 30px 15px;
+        text-align: center;
+        box-shadow: 0 4px 15px rgba(0,0,0,0,2);
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+    }
+    header h1{
+        margin: 0;
+        font-size: 2.5rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+    header p{
+        margin: 8px 0 15px;
+        font-style: italic;
+        opacity: 0.95;
+        font-size: 1rem;
+    }
+    nav{
+        margin-top: 12px;
+    }
+    nav a{
+        color: #ffffff;
+        text-decoration: none;
+        margin: 0 18px;
+        font-weight: 600;
+        font-size: 1rem;
+        position: relative;
+        padding-bottom: 4px;
+        transition: all 0.3s ease;
+    }
+    nav a:hover{
+        color: #fff;
+    }
+    nav a::after{
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+        background: #fff;
+        left: 0;
+        bottom: 0;
+        transition: width 0.3s ease;
+    }
+    nav a:hover::after{
+        width: 100%;
+    }
+    section{
+        padding: 45px 25px;
+        background: #ffffff;
+        margin: 30px auto;
+        border-radius: 16px;
+        max-width: 1200px;
+        box-shadow: 0 6px 20px rgba(0,0,0,0,0,5);
+    }
+    h2{
+        color: #FF8000;
+        font-size: 1.9rem;
+        margin-bottom: 18px;
+        border-left: 6px solid #138808;
+        padding-left: 12px;
+    }
+    #home{
+        background: linear-gradient(to right, #f9fbff, #eef6ff);
+        text-align: center;
+        padding: 50px 25px;
+        border-radius: 14px;
+    }
+    #home h2{
+        font-size: 2.3rem;
+        color: #002b5c;
+        font-weight: 700;
+        border-left: none;
+    }
+    #home p{
+        font-size: 1.1rem;
+        color: #333;
+        line-height: 1.8;
+        max-width: 850px;
+        margin: 15px auto 0;
+    }
+    .grid{
+        display: grid;
+        gap: 25px;
+        margin-top: 20px;
+    }
+    .card{
+        background: #fdfdfd;
+        border-radius: 14px;
+        padding: 18px;
+        border: none;
+        box-shadow: 0.2px 8px rgba(0,0,0,0.05);
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        gap: 18px;
+    }
+    .card img{
+        width:120px;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0.3px 12px rgba(0,0,0,0.08);
+    }
+    .card:hover{
+        transform: translateY(-8px);
+        box-shadow: 0 12 px 25px rgba(0,0,0,0.15);
+    }
+    .card p{
+        flex: 1;
+        margin: 0;
+        font-size: 1rem;
+        line-height: 1.6;
+        color: #444;
+    }
+    @media(max-width:768px){
+        .card{
+            flex-direction: column;
+            text-align: center;
+        }
+        .card img{
+            width: 100%;
+            max-width: 260px;
+        }
+    }
+    #ideas ul{
+        list-style: none;
+        padding: 0;
+    }
+    #ideas li{
+        margin-bottom: 15px;
+        background: #e0e4e0;
+        padding: 15px;
+        border-left: 5px solid #FF9933;
+        border-radius: 8px;
+        box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+        transition: 0.3s ease;
+    }
+    #ideas li:hover{
+        background: #fff6ed;
+    }
+    footer{
+        background: linear-gradient(90deg, #FF9933, #FF8000, #138808);
+        color: white;
+        text-align: center;
+        padding: 18px;
+        font-size: 14px;
+        margin-top: 35px;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+    }
+    footer p{
+        margin: 0;
+        font-size: 0.95rem;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Digital Freedom Gallery</h1>
+        <p><em>Code a Vision -Design the Nation</em></p>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#story">Story</a>
+            <a href="#technology">Technology</a>
+            <a href="#ideas">Ideas</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section id="home">
+        <div>
+            <h2>India's Digital Journey</h2>
+            <p>From the Courage of our freedom fighters to the dream of a Digital Bharat, our journey reflects innovation and unity. Today technology bridges rich heritage with a limitless future from chandrayans leap into space to UPI's payment revolution. This is the spirit of <b>Digital India</b>where tradition meats technology, and every citizen become a creators of change.</p>
+        </div>
+    </section>
+    <section id="story">
+        <h2>Tributes & Legacy</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="digital.png" alt="Freedom Fighters of India">
+                <p><strong>Freedom Heroes: </strong>Mahatma Gandhi, Subhas Chandra Bose and Bhagat Singh icons of courage and sacrifice who lit the torch of freedom. There vision resilience and unwavering spirit shaped the destiny of our nation, inspiring generations to stand for justice.</p>
+            </div>
+            <div class="card">
+                <img src="nilekani-2.webp" alt="Indian Digital Visionaries">
+                <p><strong>Digital Visionaries: </strong>Dr. APJ Abdul Kalam and Nandan Nilekani- vissionaries who turned ideas into innovation, laying the foundation of a digitally empowered India. There leadership and dedication transformed technology into a tool for national growth.</p>
+            </div>
+        </div>
+    </section>
+    <section id="technology">
+        <h2>Technology & Culture</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="upi.jpeg" alt="UPI Payment Revolution">
+                <p><strong>UPI Revolution:</strong> A break through in Indias Digital Economy- UPI has transformed the way we pay, making transactions instant, secure and accessible to every citizen.</p>
+            </div>
+            <div class="card">
+                <img src="freedom.jpeg" alt="Digital India Mission">
+                <p><strong>Digital India:</strong> A nationwide mission to empower every citizen through egovernance, high speed interational and digital enclusion. Digital India bridges the gap between rural and urban.</p>
+            </div>
+        </div>
+    </section>
+    <section id="ideas">
+        <h2>Youth Ideas for 2047</h2>
+        <ul>
+            <li><strong>AI powered Community learning hub: </strong>Smart centre where youth can learn their own place.</li>
+            <li><strong>Heritage and culture virtual reality: </strong>Immersive VR experiences that brings </li>
+            <li><strong>Open government data for student: </strong>Easy access to government data to inspire research innovation and student led project</li>
+            <li><strong>Local language artificial intelligence assistant: </strong>AI tools that understand and respond in every Indian language making technology accessible for all</li>
+        </ul>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>This website is created for the digital freedom gallery competition.</p>
+        <p><strong>Created By</strong> Arnav Singh & Arpit Gupta</p>
+        <p><strong>Email</strong> arnavsinghas668@gmail.com</p>
+        <p><strong>Phone</strong><a href="tel:+91 9794912471"> +91-9794912471</a></p>
+        <p><strong>Location</strong> Kanpur Nagar, Uttar Pradesh</p>
+    </section>
+    <footer>
+        <p>Made by Arnav Singh & Arpit Gupta - Dr. virendra Swarup Institute Of Computer Studies | 2025</p>
+    </footer>
+</body>
+</html>
